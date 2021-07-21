@@ -5,3 +5,5 @@ This game was created as a part of an The-Odin-Project exercise.
 `git clone git@github.com:Kelses/odin-project-rps.git`
 2. Open `index.html` in your favorite browser.
 3. Enjoy the game!
+## Try It Out
+You can try the game out [here](https://kelses.github.io/)
