@@ -56,15 +56,18 @@ function decideWinner(pcChoice, playerChoice) {
 function gameOver(winner) {
     let gameOverModalText = document.querySelector(".game-over-modal-text");
     let gameOverModal = document.querySelector(".game-over-modal-wrapper");
+    let myOutput = document.getElementById("output");
     if (gameOverModal !== undefined || gameOverModalText !== undefined) {
         gameOverModal.classList.remove("hidden")
         if (winner === "pc") {
             gameOverModalText.textContent = `PC has won the game with score:\n\n${pcWonCounter} - ${playerWonCounter}!`
+
         }
         else if (winner === "player") {
             gameOverModalText.textContent = `Player has won the game with score:\n\n${playerWonCounter} - ${pcWonCounter}!`
 
         }
+        myOutput.textContent = "May the Better Player Win!"
     }
 }
 
