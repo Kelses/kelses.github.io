@@ -1,51 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Calculator</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="script.js" defer></script>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <div class="main-wrapper">
+        <div class="output-number">
+          <div class="previous-number" id="lastOperationScreen"></div>
+          <div class="current-number" id="currentOperationScreen"></div>
+        </div>
+        <button id="clearbtn" class="span-two">AC</button>
+        <button id="deletebtn" class="delete-btn">DEL</button>
+        <button class="operation-btn">÷</button>
+        <button class="number-btn">1</button>
+        <button class="number-btn">2</button>
+        <button class="number-btn">3</button>
+        <button class="operation-btn">*</button>
+        <button class="number-btn">4</button>
+        <button class="number-btn">5</button>
+        <button class="number-btn">6</button>
+        <button class="operation-btn">+</button>
+        <button class="number-btn">7</button>
+        <button class="number-btn">8</button>
+        <button class="number-btn">9</button>
+        <button class="operation-btn">-</button>
+        <button id="decimalsign" class="number-btn">.</button>
+        <button class="number-btn">0</button>
+        <button class="span-two equals-btn">=</button>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Scissors Paper</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah">
-</head>
-
-<body>
-    <header class="header">
-        <h1 class="Title"> ROCK PAPER SCISSORS</h1>
-    </header>
-    <div class="rules">
-        <h2 class="rules-text">First to 5 Wins!</h2>
+        
     </div>
-    "<main class="main">
-        <div class="scores">
-            <div class="score-labels score">
-                <h2 class="player-score-label txt-large">My Score</h2>
-                <h2 class="pc-score-label txt-large">PC Score</h2>
-            </div>
-            <div class="score-values score">
-                <h2 class="player-value txt-large" id="playervalue">0</h2>
-                <h2 class="pc-value txt-large" id="pcvalue">0</h2>
-            </div>
-        </div>
-        <div class="buttons">
-            <button class="btn" id="rock" onclick="myClick('rock')"></button>
-            <button class="btn" id="paper" onclick="myClick('paper')"></button>
-            <button class="btn" id="scissors" onclick="myClick('scissors')"></button>
-        </div>
-        <div class="footer-text">
-            <p class="winner-text" id="output">May the Better Player Win!</p>
-        </div>
-        <div class="game-over-modal-wrapper hidden">
-            <div class="game-over-modal">
-                <p>GAME OVER</p>
-                <p class="game-over-modal-text"></p>
-                <button class="play-again-btn" onclick="playAgain()">PLAY AGAIN</button>
-            </div>
-        </div>
-    </main>
-
-    <script src="./script.js"></script>
-</body>
-
-</html>
+    </body>
+    </html>
